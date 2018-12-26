@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var price=10;
+        var count;
+        count=prompt( price+ "RMB/p,input num of cups");
+        if (isNaN(count)){
+            alert("pls input num of cups");
+        }
+        else{
+            if(isInteger(count)){
+                if(count%2 === 0){
+                    totalPrice = count*price*0.75;
+                }
+                else {
+                    totalPrice = count*price*0.75 + price / 4;
+                }
+            }
+            else{
+                alert("must a integer");
+            }
+        }
+        alert("your check is"+totalPrice+"RMB");
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+
+        var price;
+        price=39.9;
+        var price=40
+        var priceoff;
+        priceoff=0.3;var priceoff=0.3;
+        var price=prompt("pls input price")
+        var priceoff=prompt("pls input discount");
+        price=price*(1-priceoff);
+        alert("now price"+price);
+
+        var password=prompt("pls input your pw,and notice your perimere");
+        if (password==123){
+            alert("pw correct");
+        }
+        else if (password==456){
+            alert("权限不够");
+        }
+        else {
+            alert("alarm");
+            alert("pw wrong");
+        }
+
+        var age=prompt("pls input your age")
+        if (isNaN(age)){
+            alert("pls input number")
+        }
+        else{
+            if(age>=18){
+                if(age>400){
+                    alert("monster")
+                }
+                else {
+                    alert("grew up")
+                }
+            }
+            if (age<18) {
+                alert("child")
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
