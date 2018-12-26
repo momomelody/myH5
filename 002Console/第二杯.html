@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
+        function isInteger(obj){
+            return obj%1 === 0;
+        }
         var price=10;
         var count;
         count=prompt( price+ "RMB/p,input num of cups");
@@ -12,18 +15,19 @@
         }
         else{
             if(isInteger(count)){
-                if(count%2 === 0){
+                if(count % 2 == 0){
                     totalPrice = count*price*0.75;
                 }
                 else {
                     totalPrice = count*price*0.75 + price / 4;
                 }
+                alert("your check is"+totalPrice+"RMB");
             }
             else{
                 alert("must a integer");
             }
         }
-        alert("your check is"+totalPrice+"RMB");
+
     </script>
 </head>
 

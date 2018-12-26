@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**所有样式通用,Helvetica 电商设计经典字体*/
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	list-style: none;
+}
+
+.topbj{
+	width:100%;
+	height:33px;
+	background: #333333;
+}
+/*margin 居中写法*/
+.topbj .top{
+	width: 854px;
+	height: 100%;
+	margin: 0 auto;
+}
+.topbj .top li{
+	width:110px;
+	height: 100%;
+	float:right;
+	line-height: 30px;
+	color:#777777;
+	cursor: pointer;
+}
+.topbj .top li:first-child{
+	float:left;
+}
+.topbj .top li a{
+	color: #777777;
+	text-decoration-line: none;
+}
+.topbj .top li a:hover{
+	color: #00c8c8;
+}
+.topbj .top .mouse:hover{
+	color: #00c8c8;
+}
+/*定位相对和绝对写法*/
+.topbj .top .gowuche{
+	width:60px;
+	background: #00c8c8;
+	color:white;
+	padding-left: 50px;
+	position: relative;
+}
+.topbj .top .gowuche img{
+	position: absolute;
+	top:10px;
+	left: 15px;
+}
+
+/*行高需要统一才能居中*/
+.navbj{
+	width:100%;
+	height:80px;
+	position: absolute;
+	z-index: 999;
+}
+.navbj .nav {
+	width: 1300px;
+	height: 100%;
+	line-height: 80px;
+	margin: 0 auto;	
+}
+/*width选AUTO属性标签有多宽，li就有多宽;padding(上下，左右)*/
+.navbj .nav li{
+	width:auto;
+	float:left;
+	cursor: pointer;
+	padding: 0 20px;
+}
+.navbj .nav li a{
+	color: black;
+	text-decoration-line: none;
+}
+.navbj .nav li a:hover{
+	color: aqua;
+}
+.navbj .nav li:first-child{
+	margin-right: 317px;
+}
+.navbj .nav li:hover{
+	color: aqua;
+}
+/*input不能插入图片，用bg写法插入*/
+.navbj .nav li input{
+	width: 140px;
+	height: 23px;
+	border: 1px solid #eeeeee;
+	color: #9e9e9e;
+	padding-left: 3px;
+	background: url(../img/glass.png) no-repeat 125px 5px;
+}
+.navbj .nav .jiaobiao{
+	position: relative;
+}
+/*after伪类写法，::after+content*/
+.navbj .nav .jiaobiao::after{
+	content: "";
+	width: 6px;
+	height: 4px;
+	background-image: url(../img/jiaobiao.png);
+	position: absolute;
+	left: 10px;
+	top: 57px;
+}
+
+/*先写边框判读弹窗位置，再边框阴影写法（上下偏移，左右偏移 模糊大小 投影颜色）*/
+.tanchuang{
+	width: 340px;
+	height: 346px;
+	padding: 22px;
+	position: absolute;
+	/*border:1px solid black;*/
+	box-shadow: 9px 15px 24px rgba(0,0,0,0.14);
+	display: none;
+	background: white;
+}
+.tanchuang .tcTop{
+	width: 100%;
+	height: 200px;	
+}
+.tanchuang .tcTop .half{
+	width: 50%;
+	float: left;	
+}
+.tanchuang .tcTop .half p{
+	line-height: 20px;
+	color:#727272;
+	font-size: 11px;
+}
+.tanchuang .tcTop .half .firstline{
+	font-size: 12px;
+	font-weight: bold;
+	color: #575153;
+	margin-bottom: 24px;
+}
+/*一个样式中heigh和Padding高度会叠加，so height 需要二次计算*/
+.tanchuang .tcBottom{
+	width: 100%;
+	height: 100px; 
+	font-size: 20px;
+	color: white;
+	background: #333333;
+	text-align: center;
+	line-height: 28px;
+	padding-top: 46px;	
+}
+.navbj .nav li:hover .tanchuang{
+	display: block;
+}
+.banner{
+	width: 100%;
+	height: 673px; 
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+.banner img{
+	display: block;
+	margin: 0 auto;
+	
+}
+/*position的top可以测量，父级中尺寸；宽度父级中是%，子级也须为%;添加Position后导航栏被覆盖，需要用z-index在navbj和banner设置层级关系，赋值大的在上，赋值小的在下*/
+.banner .buy{
+	width: 250px;
+	height: 40px;
+	line-height: 40px;
+	color: #838383;
+	border: 2px solid #838383;
+	text-align: center;
+	font-size: 18px;
+	position: absolute;
+	right: 10%;	
+	top:540px;
+	
+}
+
+.contten{
+	width: 1292px;
+	/*height: 1039px;*/
+	margin: 45px auto;
+	border-top:1px solid #f7f7f7;
+	border-bottom:1px solid #f7f7f7;
+}
+.contten .nva-S{
+	width: 100%;
+	height: 90px;
+	line-height: 90px;
+	font-size: 10px;
+}
+.contten .nva-S li{
+	width:180px;
+	text-align: left;
+	float: left;
+	cursor: pointer;
+}
+.contten .nva-S li:hover{
+	color: aqua;
+}
+.contten .photobig {
+	width: 100%;
+	height: 990px;		
+}
+.contten .photobig .half {
+	width: 50%;
+	height: 100%;
+	float:left;
+}
+/*注意图片设置float是为了之后样式复用*/
+.contten .photobig .half .photo {
+	width: 307px;
+	height: 365px;
+	float: left;
+	position: relative;
+}
+.contten .photobig .half .photo span {
+	position: absolute;
+	left: 11px;
+	top: 11px;
+	color: #9a9a9a;	
+	font-size: 11px;
+}
+.contten .photobig .half .photo img{
+	width: 100%;
+	height: 100%;
+}
+.contten .lookbookbox{
+	width: 1500px;
+	height: 388px;
+	margin: 45px auto 45px -104px;
+}
+.contten .lookbookbox .lookbook{
+	width: 430px;
+	height: 100%;
+	background: #f8f8f8;
+	padding-right: 50px;
+	position: relative;
+	text-align: right;
+	float: left;
+	margin-right: 21px;
+}
+.contten .lookbookbox .lookbook:last-child{
+	margin-right: 0;
+}
+.contten .lookbookbox .lookbook .title{
+	/*text-align: right;*/
+	font-weight: bold;
+	color: #575153;
+	font-size: 26px;
+	/*margin-top: 72px;
+	float:right;*/
+	position: absolute;
+	top: 72px;
+	right: 50px;
+}
+.contten .lookbookbox .lookbook .shuoming{
+	/*text-align: right;*/
+	color: #575153;
+	font-size: 26px;
+	/*margin-top: 112px;
+	float:right;*/
+	position: absolute;
+	top: 110px;
+	right: 50px;
+}
+.contten .lookbookbox .lookbook span{
+	font-size: 8px;
+	color: #575153;
+	/*text-align: right;*/
+	line-height: 16px;
+	position: absolute;
+	top: 160px;
+	right: 50px;
+}
+.contten .lookbookbox .lookbook .botton{
+	width: 131px;
+	height: 43px;
+	text-align: center;
+	line-height: 43px;
+	font-size: 12px;
+	border: 1px solid #575153;
+	position: absolute;
+	top: 250px;
+	right: 50px;
+	
+}
+.contten .lookbookbox .lookbook img{
+	position: absolute;
+	top: 33px;
+	left: 27px;
+}
+/*Margin 如果直接设置数据显示有问题，可在父级设置padding,父级中的高度需随适调整。*/
+.bottombox{
+	width: 100%;
+	height: 395px;
+	background: #f8f8f8;
+	padding-top:40px;
+}
+.bottombox .ulbox{
+	width: 880px;
+	height: 170px;
+	margin: 0 auto;
+	/*background: black;*/
+}
+.bottombox .ulbox ul{
+	width: 20%;
+	float: left;
+}
+.bottombox .ulbox ul li{
+	line-height: 20px;
+	height:20px;
+	font-size: 8px;
+	color: #727272;
+}
+.bottombox .ulbox ul li:first-child{
+	font-size: 12px;
+	font-weight: bold;
+	color: #6c6769;
+	margin-bottom: 24px;
+}
+.bottombox .ulbox .address{
+	font-size: 11px;
+	font-weight: bold;
+	color: #6c6769;
+	margin-bottom: 24px;
+}
+.bottombox .ulbox .contact{
+	font-size: 11px;
+	color: #6c6769;
+	margin-bottom: 24px;
+}
+.anniubox{
+	width: 880px;
+	height: 148px;
+	margin: 40px auto;
+	/*background: black;*/
+}
+.anniubox .leftanniu{
+	width: 417px;
+	height: 100%;
+	background: #333333;
+	color: white;
+	float: left;	
+}
+.anniubox .leftanniu .line1{
+	width: 100%;
+	text-align: center;
+	font-size: 27px;
+	font-weight: bold;
+	margin-top: 46px;
+}
+.anniubox .leftanniu .line2{
+	width: 100%;
+	text-align: center;
+	font-size: 27px;
+	margin-bottom: 46px;
+}
+.anniubox .rightanniu{
+	width: 417px;
+	height: 100%;
+	background: aqua;
+	float: right;	
+	position: relative;
+}
+.anniubox .rightanniu img{
+	position: absolute;
+	top:61px;
+	left: 105px;
+}
+.bottombj{
+	width:100%;
+	height:33px;
+	background: #333333;
+}
+.bottombj .bottom{
+	width: 880px;
+	height: 100%;
+	margin: 0 auto;
+}
+.bottombj .bottom li:first-child{
+	width:atuo;
+	height: 100%;
+	float:left;
+	line-height: 30px;
+	color:#777777;
+}
+.bottombj .bottom li:last-child{
+	width:atuo;
+	height: 100%;
+	float:right;
+	line-height: 30px;
+	color:#777777;
+}

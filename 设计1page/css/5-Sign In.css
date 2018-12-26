@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+.signImg{
+	margin-top: 80px;
+	width: 100%;
+}
+
+.inputBox{
+	width: 906px;
+	height: 300px;
+	margin: 40px auto;
+}
+.inputBox div{
+	float: left;
+	width: 400px;
+	height: 100%;
+	padding: 0 26px;
+}
+.inputBox .left{
+	border-right: 1px solid #f4f4f4;
+	
+}
+.inputBox div p{
+	font-size: 10px;
+	color: #575153;
+	text-align: left;
+	margin-bottom: 34px;
+}
+.inputBox .shurukuang{
+	width: 100%;
+	height: 28px;
+	border:1px solid #e7e7e7;
+	color: #999999;
+	padding-left: 6px;
+	margin-bottom: 25px;
+}
+/*如果css无效，可以写在源代码标签上style 优先级最高 */
+.inputBox .left .tijiaoBox,.inputBox .right .anniuBoxsignin{
+	width: 100%;
+	height: 44px;
+	padding: 0;
+}
+.inputBox .left .tijiaoBox input{
+	width: 110px;
+	height: 44px;
+	text-align: center;
+	line-height: 42px;
+	color: white;
+	background: #00c8c8;
+	border: 0;
+	cursor: pointer;
+}
+.inputBox .left .tijiaoBox span{
+	float: right;
+	margin-top: 16px;
+	font-size: 11px;
+	color: aqua;
+	cursor: pointer;
+}
+.inputBox .right .danxuankuang{
+	width: 100%;
+	height: 44px;
+	padding: 0;
+	position: relative;
+}
+.inputBox .right .danxuankuang input{
+	width: 18px;
+	height: 18px;
+}
+.inputBox .right .danxuankuang span{
+	position: absolute;
+	left: 26px;
+	top: 4px;
+	font-size: 10px;
+	color: gray;
+}
+.inputBox .right .anniuBoxsignin input{
+	width: 195px;
+	height: 44px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 11px;
+	color: #838384;
+	background: white;
+	border: 1px solid #838384;
+	cursor: pointer;
+}	
+.inputBox .right .anniuBoxsignin span{
+	float: right;
+	margin-top: 6px;
+	font-size: 11px;
+	text-align: right;
+	color: #838384;
+}
+.inputBox .right .anniuBoxsignin span a{
+	text-decoration-line: none;
+	color: aqua;
+}

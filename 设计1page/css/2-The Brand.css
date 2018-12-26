@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+.signImg{
+	margin-top: 80px;
+	width: 100%;
+}
+
+.contten2{
+	width: 100%;
+	height: 784px;
+	margin: 30px auto 65px;
+}
+.contten2 .contten2half{
+	width: 880px;
+	height: 100%;
+	margin: 0 auto;
+}
+.contten2 ul li:nth-child(1){
+	width: 430px;
+	height: 45px;
+	line-height: 43px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #575153;
+	text-align: left;
+}
+.contten2 ul li:nth-child(2){
+	width: 430px;
+	font-size: 10px;
+	margin-bottom: 12px;
+	color: #9a9999;
+	text-align: left;
+}
+.contten2 ul li:nth-child(3){
+	width: 430px;
+	line-height: 12px;
+	font-size: 8px;
+	color: #9a9999;
+	text-align: left;
+}
+.contten2 ul li span{
+	width: 430px;
+	line-height: 12px;
+	font-size: 8px;
+	color: aqua;
+}
+.contten2 .half2left{
+	float: left;
+	width: 430px;
+}
+.contten2 .half2left img:nth-child(1){
+	width: 100%;
+	height: 291px;
+	margin-bottom: 30px;
+}
+.contten2 .half2left img:nth-child(2){
+	width: 100%;
+	height: 293px;
+}
+.contten2 .half2right{
+	float: right;
+	width: 430px;
+	margin-top: 40px;
+}
+.contten2 .half2right .imgr1{
+	width: 100%;
+	height: 295px;
+	margin-top: 45px;
+}
+.contten2 .half2right .threeimg img{
+	height: 75px;
+	width: 30%;
+	margin-top: 30px;
+	padding-left: 10px;
+}
+
