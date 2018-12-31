@@ -1,0 +1,82 @@
+*{padding: 0;margin: 0;font-size: 12px;font-family: "微软雅黑";list-style: none;color: #aaa;outline: none;}
+#header{width: 100%;height: 225px;background: #333;}
+.hd_t{height: 30px;background: #272526;}
+.hd_t .con{width: 1000px;height: 30px;margin: 0 auto;line-height: 30px;}
+.hd_t .con p{float: left;color: #686b70;}
+.hd_t .con ul{float: right;}
+.hd_t .con ul li{float: left;color: #ccc;}
+.hd_t .con ul li a{padding: 0 15px;}
+.hd_t .con ul li a:hover{color: white;}
+
+.hd_c{width: 100%;height: 140px;background: #333;}
+.hd_c .con{width:1000px;height:140px;margin: 0 auto;}
+.hd_c .con .logo{margin-top: 45px;display: block;float: left;}
+.hd_c .con .r{width: 220px;height: 55px;float: right;margin-top: 45px;}
+.hd_c .con p{float: right;}
+.hd_c .con form{width: 100%; float: right;margin-top: 12px;}
+.hd_c .con .so{width: 190px;height: 16px;border: none;background: #393939;display: block;float: left;text-indent: 1em;}
+.hd_c .con .btn{float:right;}
+
+.hd_d{width:100%;height: 50px;background: #202020;}
+.hd_d ul{width: 1000px;height: 50px;margin: 0 auto;}
+.hd_d li{float: left;background: url( ../images/竖线.png) no-repeat left center;}
+.hd_d li a {height: 50px;line-height: 50px;display: block;padding: 0 30px;}
+.hd_d .moren{background: none;}
+.hd_d .moren a{padding-left: 0;}
+.hd_d li a:hover{color: white;}
+
+#banner{width: 100%;height: 522px;background: url(../images/img3.jpg) no-repeat center top;overflow: hidden;}
+
+#zhonglei{width: 100%; margin: 45px 0;}
+.zl_t{width: 100%;height: 140px;background: url( ../images/xian.png) no-repeat center bottom;text-align: center;}
+.zl_t img{margin: 0 auto;}
+.zl_t h2{margin: 20px auto 10px auto;font-size: 14px;color: #959595;}
+.zl_t p{color: #bfbdbe;}
+
+.zl_c{width: 1000px;margin: 0 auto;overflow: hidden;}
+.zl_nav{text-align: center;}
+.zl_nav li{width: 52px; height: 52px;background: #c8c8c8;display: inline-block;margin: 0 20px;border-radius: 26px;cursor: pointer;}
+.zl_nav .sf{background-image: url(../images/sf.png);background-position: center center;background-repeat: no-repeat;}
+.zl_nav .chuang{background-image: url(../images/床.png);background-position: center center;background-repeat: no-repeat;}
+.zl_nav .cz{background-image: url(../images/家具-饭桌.png);background-position: center center;background-repeat: no-repeat;}
+.zl_img{margin-top: 45px;margin-bottom: 25px;overflow: hidden;}
+.zl_img li{float: left;margin-right: 4px;position: relative;overflow: hidden;}
+.zl_img li img{width: 247px;}
+.zl_img li .bg{background: rgba(0,0,0,0.5); width: 247px; height: 372px;position: absolute;top: 380px;left: 0;transition: all 0.3s;}
+.zl_img li .img_fl{position: absolute;top: -380px;left: 0;transition: all 0.3s;}
+.zl_img li:hover .bg,.zl_img li:hover .img_fl{top: 0;}
+.zl_more{width: 100%;height: 50px;display: block;background: #f4f4f4;text-align: center;line-height: 50px;color: #b8b8b0;}
+.zl_more:hover{background:#b8b8b0;color: #f4f4f4;}
+
+
+#youshi{width: 100%;height: 505px;padding-top: 45px; background: url(../images/bg.png)}
+.ys_c{height:270px;margin-top: 25px; }
+.ys_c li{width: 480px;height: 110px;float: left;margin-right: 40px;margin-bottom: 45px;}
+.ys_c li .tu{float: left;margin: 15px; background: white; border-radius: 56px;border: none;transition: all 0.8s; }
+.ys_c li h2{float: left;width: 350px;line-height: 28px;border-bottom: 1px #dedede solid;transition: all 0.8s;}
+.ys_c li p{float: left;width: 350px;line-height: 1.5em;margin-top: 10px;transition: all 0.8s;}
+
+.ys_c li:hover .tu{background: #333;}
+/**.ys_c li:hover h2{background: #6c6c6c;}
+.ys_c li:hover p{background: #888;}**/
+
+#about{width: 100%;height: 435px;padding-top: 45px; background:#313131; }
+.ab_t{background: url(../images/xian.png) no-repeat center bottom;}
+.ab_c{height: 180px;text-align: center;margin: 75px auto;}
+.ab_c h1{font-size: 25px;font-weight: 100;color: #c9c9c9;}
+.ab_c p{margin: 30px auto 40px auto;font-weight: 620px;}
+.ab_c h3{font-weight: 100;}
+
+#footer{width: 100%;background: #202020; }
+.ft_con{width: 1000px;height: 90px;margin: 0 auto;}
+.ft_con img{float: left;margin-top: 34px;}
+.ft_con p{float: right;margin-top: 37px;}
+
+.top{width: 60px;height: 60px;display: block;background: #ccc;color: #222;font-size: 40px;line-height: 60px;text-align: center;position: fixed;top: 50%;left: 50px;text-decoration: none;font-weight: 300;}
+
+
+
+
+
+
+
