@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+    </style>
     <script>
         function isInteger(obj){
             return obj%1 === 0;
@@ -11,7 +16,7 @@
         var count;
         count=prompt( price+ "RMB/p,input num of cups");
         if (isNaN(count)){
-            alert("pls input num of cups");
+            document.write("pls input num of cups");
         }
         else{
             if(isInteger(count)){
@@ -21,10 +26,10 @@
                 else {
                     totalPrice = count*price*0.75 + price / 4;
                 }
-                alert("your check is"+totalPrice+"RMB");
+                document.write("your check is"+totalPrice+"RMB");
             }
             else{
-                alert("must a integer");
+                document.write("must a integer");
             }
         }
 
